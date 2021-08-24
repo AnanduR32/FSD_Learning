@@ -1,12 +1,16 @@
 var teams = ['team1', 'team2', 'team3']
-var availablePlayerCount = document.getElementById('players').childElementCount
-console.log(availablePlayerCount);
+var availablePlayerCount = 0
 window.onload = function () {
-    // setPlayerNames();
+    availablePlayerCount = document.getElementById('players').childElementCount
+    console.log(availablePlayerCount);
+    setPlayerNames();
 };
 function setPlayerNames() {
-    for (let i = 1; i < 10; i++) {
-        document.getElementById('player' + i).innerHTML = '<p>player ' + i + '</p>'
+    for (let i = 1; i < availablePlayerCount+1; i++) {
+        var tmp = '<p>player ' + i + '</p>'
+        // console.log(tmp)
+        document.getElementById(`player${i}`).innerHTML = tmp
+        // document.getElementById('player' + i).innerHTML = 
     }
 }
 
