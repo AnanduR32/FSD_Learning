@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+</head>
+
+<body>
+    <div class="scaffold">
+        <div class="primaryContainer">
+            <div class="teamContainer">
+                <div ondragover="allowDragToDiv(event)" ondrop="dropAtTargetDiv(event)" class="team" id="team1"></div>
+                <div class="spacer"></div>
+                <div ondragover="allowDragToDiv(event)" ondrop="dropAtTargetDiv(event)" class="team" id="team2"></div>
+                <div class="spacer"></div>
+                <div ondragover="allowDragToDiv(event)" ondrop="dropAtTargetDiv(event)" class="team" id="team3"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="playerContainer" id='players'>
+                <div ondragstart="dragStart(event)" class="player" id="player1"></div>
+                <div ondragstart="dragStart(event)" class="player" id="player2"></div>
+                <div ondragstart="dragStart(event)" class="player" id="player3"></div>
+                <div ondragstart="dragStart(event)" class="player" id="player4"></div>
+                <div ondragstart="dragStart(event)" class="player" id="player5"></div>
+                <div ondragstart="dragStart(event)" class="player" id="player6"></div>
+                <!-- <div ondragstart="dragStart(event)" class="player" id="player7"></div>
+                <div ondragstart="dragStart(event)" class="player" id="player8"></div>
+                <div ondragstart="dragStart(event)" class="player" id="player9"></div> -->
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
