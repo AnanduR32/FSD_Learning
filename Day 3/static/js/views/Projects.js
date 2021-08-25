@@ -8,7 +8,6 @@ export default class  extends AbstractView {
     async getHTML(){
         return `<section class="section-projects">
         <div class="section-projects-header">
-            <h1>About me</h1>
             <h3>🤺 Datascientist | UI/UX Designer | Android Developer 🦉</h3>
             <h4><i>Deciphering the singularity</i></h4>
         </div>
