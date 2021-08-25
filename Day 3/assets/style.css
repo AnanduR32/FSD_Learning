@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px auto;
+  background-color: #ffd23f;
+  border-radius: 8px;
+  transition: all 0.15s ease-in;
+}
+
+nav > div:not(.spacer) {
+  border-radius: 10px;
+  border: none;
+  background-color: #f3fcf0;
+  padding: 10px;
+  margin: 5px;
+}
+nav div:hover:not(.spacer) {
+  background-color: #fae49d;
+}
+
+nav a:not(.githubRepo) {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #1f271b;
+}
+
+.spacer {
+  flex: 1;
+}
+/* .spacer:hover{
+    background-color: transparent;
+} */
+
+.githubRepo {
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0px auto;
+  width: 80%;
+  font-weight: 600;
+}
+.content {
+  margin: 32px auto;
+}
+
+header > .header-name {
+  font-size: 44px;
+  margin: 32px auto;
+  width: fit-content;
+}
+header > .header-subtitle {
+  margin: 6px auto;
+  width: fit-content;
+}
+
+header .header-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background-color: #ffd23f;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+header .header-icon {
+  width: fit-content;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+header .header-icon > img {
+  width: 150px;
+  height: 150px;
+}
+
+.content a:link:not(.social-icon a):not(.contact-button a){
+    color: #ffd23f
+}
+.content a:visited:not(.social-icon a):not(.contact-button a){
+    color: #d6b136
+}
+
+.content .section-about {
+  font-weight: 500;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.content .section-about > .section-about-block {
+  padding: 10px;
+}
+
+.content .section-projects {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.content .section-projects > .section-projects-header {
+  text-align: center;
+}
+
+.content .section-projects > .section-projects-content {
+  font-weight: 500;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content .section-projects > .section-projects-content ul {
+  list-style-type: circle;
+}
+
+.content .section-projects > .section-projects-content li {
+  padding: 2px 0px;
+}
+.content .section-projects > .section-projects-content a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.content .section-projects > .section-projects-content a img {
+  height: 15px;
+  width: 15px;
+}
+
+.content
+  .section-projects
+  > .section-projects-content
+  > .section-projects-content-block {
+  width: 50%;
+}
+
+form {
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 10px auto;
+  background-color: rgb(1, 182, 182);
+}
+form > input {
+  margin: 3px;
+  border-style: none;
+  border-radius: 4px;
+}
+
+form > input[type="text"] {
+  width: 60%;
+  margin: 4px auto;
+}
+
+.form-spacer {
+  height: 5px;
+}
+
+.section-contacts .section-contacts-header {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: auto;
+}
+
+.social-icon a {
+  margin: 4px;
+  border-radius: 50%;
+  border: 1px solid #444444;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  display: block;
+  color: #444444;
+  transition: all 0.15s ease-in;
+}
+.social-icon a:hover {
+  color: #fae49d;
+  border: 1px solid grey;
+  background: grey;
+}
+
+.contact-button-container{
+    background-color: #ffd23f;
+    height: 46px;
+    width: 196px;
+    border-radius: 8px;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.contact-button {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 180px;
+  border-radius: 8px;
+  border-style: none;
+  background-color: #f3fcf0;
+  font-size: 12px;
+  transition: all 0.15s ease-in;
+}
+.contact-button a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  color: #1f271b;
+}
+.contact-button:hover {
+    padding: 4px;
+  background-color: #fae49d;
+  cursor: pointer;
+}
