@@ -1,0 +1,20 @@
+import AbstractView from "./AbstractView.js";
+
+export default class  extends AbstractView {
+    constructor(){
+        super()
+        this.setTitle("About")
+    }
+    async getHTML(){
+        return `<section class="section-about">
+        <div class="section-about-block">
+            Spent most of my life around computers and other electronic devices, greatly fascinated by
+            innovations and breakthroughs in technology and would like to surround myself without people
+            who share the same passion as I do towards science and technology.
+        </div>
+        <div class="section-about-block">
+            In love with developing visually clean appealing minimalistic content for the enduser.
+        </div>
+    </section>`
+    }
+}

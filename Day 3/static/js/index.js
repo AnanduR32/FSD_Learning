@@ -1,9 +1,21 @@
+import About from "./views/About.js";
+import Home from "./views/Home.js";
+import Contact from "./views/Contact.js";
+import Projects from "./views/Projects.js";
+import Qualifications from "./views/Qualifications.js";
+
+const navigateTo = url => {
+    history.pushState(null, null, url);
+    router();
+}
+
 const router = async()=>{
     const routes = [
-        { path: "/", view: ()=>{console.log("Viewing Dashboard")}},
-        { path: "/Login", view: ()=>{console.log("Viewing Login")}},
-        { path: "/Employee", view: ()=>{console.log("Viewing Employee")}},
-        { path: "/Contact", view: ()=>{console.log("Viewing Contact")}}
+        { path: "/", view: Home},
+        { path: "/About", view: About},
+        { path: "/Projects", view: Projects},
+        { path: "/Qualifications", view: Qualifications},
+        { path: "/Contact", view: Contact}
     ]
 
     const potentialMatches = routes.map(route=>{
@@ -13,10 +25,30 @@ const router = async()=>{
         }
     })
     let match = potentialMatches.find(potentialMatche => potentialMatche.isMatch)
-    console.log(potentialMatches)
+
+    if(!match){
+        match = {
+            route: routes[0],
+            isMatch: true
+        }
+    }
+
+    const view = new match.route.view()
+
+    document.querySelector("#app").innerHTML = await view.getHTML()
+
+    // console.log(match.route.view())
 
 }
 
+window.addEventListener("popstate", router)
+
 document.addEventListener("DOMContentLoaded",()=>{
+    document.body.addEventListener("click", e=>{
+        if(e.target.matches("[data-link]")){
+            e.preventDefault()
+            navigateTo(e.target.href)
+        }
+    })
     router()
 })
