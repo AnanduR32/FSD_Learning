@@ -144,6 +144,7 @@ header .header-icon > img {
   > .section-projects-content
   > .section-projects-content-block {
   width: 50%;
+  min-width: 300px;
 }
 
 .content .section-contacts p{
