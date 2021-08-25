@@ -146,6 +146,11 @@ header .header-icon > img {
   width: 50%;
 }
 
+.content .section-contacts p{
+    width: fit-content;
+    margin: 20px auto;
+}
+
 form {
   border-radius: 10px;
   padding: 10px;
