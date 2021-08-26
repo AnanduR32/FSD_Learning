@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 4 - Bootstrap</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/js/bootstrap.min.js">
 </head>
+
 <body>
-    <button class="btn">Button</button>
-    
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="container text-center">
+                <h1 class="">Login</h1>
+                <div class="col d-grid justify-content-start">
+                    <div class="container-fluid">
+                        <div class="input-group-sm">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="input-group-sm">
+                            <input type="number" placeholder="Phone No">
+                        </div>
+                        <div class="input-group-sm">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-group-sm">
+                            <input type="password" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
