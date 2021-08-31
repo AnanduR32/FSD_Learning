@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap');
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+.heading-span {
+    color: rgb(94, 94, 94);
+    font-weight: normal;
+}
+
+.fancy-span-blue-1 {
+    color: rgb(22, 89, 177);
+    font-weight: bold;
+}
+
+.fancy-span-orange-1 {
+    color: #FF6201;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column-2-centered {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spacer-5-px {
+    width: 5px;
+}
+
+.baron-bunny>a>img {
+    margin: auto;
+    padding: 10px;
+    display: block
+}
+
+.baron-bunny figcaption {
+    opacity: 0;
+}
+
+.baron-bunny:hover figcaption {
+    opacity: 0.7;
+}
+
+.itemizer-1 {
+    font-weight: 700;
+}
+
+.itemizer-2 {
+    font-weight: 500;
+}
+
+.container-feedback {
+    margin: 15px;
+    width: 70%;
+    border-radius: 20px;
+    background-image: linear-gradient(270deg, rgb(169, 231, 241), rgb(206, 234, 240));
+    padding: 20px;
+}
+
+.container-feedback .form_basic input {
+    padding: 4px 8px;
+    border: none;
+    color: #124559;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 12px;
+}
+
+.container-feedback .form_basic input:focus {
+    border: none;
+    border-radius: 8px;
+}
+
+.container-feedback input[type=submit] {
+    background-color: #124559;
+    padding: 4px 8px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 45%;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 2em;
+}
+
+.rate_session_slider {
+    padding: 10px;
+}
+
+.form_gender_container {
+    padding: 10px;
+}
+
+.form_checkbox_container {
+    padding: 10px;
+}
+
+.container-feedback input[type=submit]:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    padding: 20px;
+}
+
+.form_basic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form_basic_name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+table {
+    overflow-x: scroll;
+    width: 320px;
+}
+
+@media screen and (max-width: 832px) {
+    .column-2-centered {
+        width: none;
+    }
+    .form_basic input[type=text] {
+        width: 97%;
+    }
+}
+
+@media screen and (min-width: 832px) {
+    .column-2-centered {
+        width: 50%;
+    }
+    .form_basic input[type=text] {
+        width: 44%;
+    }
+}

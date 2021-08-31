@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anandu R">
+    <meta name="description" content="HTML basic webpage">
+    <meta name="keywords" content="html, basics, xebia, day 1">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <script src="assets/scripts.js"></script>
+    <title>Training Day 1</title>
+</head>
+
+<body>
+
+    <h2>Training Day: <span class="heading-span">1</span></h2>
+    <h3>Vendor: <span class="heading-span">Xebia Academy Gobal</span></h3>
+    <h4>Instructor(s): <span class="heading-span">Varun Gupta</span></h4>
+    <hr>
+    <h4>Topic: <span class="heading-span">HTML5</span></h4>
+    <p><span class="fancy-span-blue-1">HTML5</span> was released in 2008, with mulitmedia support on top of the existing content delivery systems</p>
+    <div class="row">
+        <div class="column-2-centered">
+            <p>Illustration of naive implementation of <span class="fancy-span-orange-1">fibonacci series</span> solver function</p>
+            <pre>
+    function fib_naive(num:int):int{
+        if(num===1){
+            return(1);
+        }
+        if(num===0){
+            return(0);
+        }
+        return(fib_naive(num-1)+fib_naive(num-2))
+    }
+</pre>
+        </div>
+        <div class="column-2-centered">
+            <figure class="baron-bunny">
+                <a href="https://genshin-impact.fandom.com/wiki/Explosive_Puppet" target="blank">
+                    <img src="assets/images/baron-bunny-genshing-impact.gif" alt="Baron Bunny" height="150px">
+                </a>
+                <figcaption>To know more about Baron Bunny, Click here!</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-2-centered">
+            <ul class="itemizer-1">
+                <li>HTML DOCTYPE : <span class="heading-span">To tell the browser how to render the document, in this case as a HTML5 document</span></li>
+                <li>Default tags
+                    <ul list-style-type="circle" class="itemizer-2">
+                        <li>head : <span class="heading-span">Contains metadata, title, link to external css and preprocess elements</span></li>
+                        <li>body : <span class="heading-span">Main content of the webpage</span></li>
+                        <li>a (anchor): <span class="heading-span">To link to an external url</span></li>
+                        <li>img : <span class="heading-span">Add images of various formats - jpg, png, gif, and so on</span></li>
+                        <li>pre : <span class="heading-span"></span></li>
+                        <li>div : <span class="heading-span">To create a block of html tags</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="column-2-centered">
+            <div class="container-feedback">
+                <h2>Feedback</h2>
+                <div>
+                    <form>
+                        <div class="form_basic">
+                            <div class="form_basic_name">
+                                <input type="text" placeholder="First name">
+                                <div class="spacer-5-px"></div>
+                                <input type="text" placeholder="Last name">
+                            </div>
+                            <div class="form_basic_date">
+                                <input type="date" name="datetime" id="datetime_id">
+                            </div>
+                            <div class="spacer-5-px"></div>
+                            <div class="form_basic_phoneno">
+                                <input type="number" placeholder="Phone No.">
+                            </div>
+                            <div class="spacer-5-px"></div>
+                            <div class="form_basic_email">
+                                <input type="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form_gender_container">
+                            <div>
+                                <input type="radio" value="Male" name="gender" id="gender_id_male">
+                                <label for="gender_id">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="Female" name="gender" id="gender_id_female">
+                                <label for="gender_id_female">Female</label>
+                            </div>
+                        </div>
+                        <div class="rate_session_slider">
+                            <span class="heading-span">0</span>
+                            <input type="range" name="rate_session" id="rate_session_id" min="0" max="10" step="1">
+                            <span class="heading-span">10</span>
+                        </div>
+                        <div class="form_checkbox_container">
+                            <input type="checkbox" name="" id="subscribe_id" placeholder="Subscribe">
+                            <label for="subscribe_id">Subscribe</label>
+                        </div>
+                        <br>
+                        <input type="submit" onclick="getUserLocation()">
+                    </form>
+                    <h3>Contact</h3>
+                    <table>
+                        <tr>
+                            <th>Department</th>
+                            <th>Name</th>
+                            <th>Contact</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">IT</td>
+                            <td>Anandu R</td>
+                            <td>anandu.r@soti.net</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
