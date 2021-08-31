@@ -18,3 +18,26 @@ var days;
 })(days || (days = {}));
 console.log(colors.Blue);
 console.log(days);
+var Car = /** @class */ (function () {
+    function Car(instock, price, model, maker) {
+        this.price = price;
+        this.maker = maker;
+        this.instock = instock;
+        this.price = price;
+        this.model = model;
+        this.maker = maker;
+    }
+    Car.prototype.getDetails = function () {
+        return {
+            'inStock': this.instock,
+            'price': this.price,
+            'model': this.model,
+            'maker': this.maker
+        };
+    };
+    return Car;
+}());
+var carObj = new Car(false, 1557000, 'Nexon', 'Tata');
+carObj.instock = true;
+carObj.price = 1723000;
+console.log(carObj.getDetails());
