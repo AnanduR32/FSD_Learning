@@ -1,15 +1,17 @@
-header>.header-name {
+.header>.name {
+    font-weight: 600;
     font-size: 44px;
     margin: 32px auto;
     width: fit-content;
 }
 
-header>.header-subtitle {
+.header>.subtitle {
     margin: 6px auto;
+    font-weight: 600;
     width: fit-content;
 }
 
-header .header-icon-container {
+.header .icon-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +23,7 @@ header .header-icon-container {
     height: 160px;
 }
 
-header .header-icon {
+.header .icon {
     width: fit-content;
     overflow: hidden;
     width: 150px;
@@ -29,11 +31,7 @@ header .header-icon {
     border-radius: 50%;
 }
 
-header .header-icon>img {
+.header .icon>img {
     width: 150px;
     height: 150px;
-}
-
-.content .section-home-header {
-    text-align: center;
 }

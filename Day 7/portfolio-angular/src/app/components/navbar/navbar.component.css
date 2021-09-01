@@ -8,9 +8,10 @@ nav a {
     width: 40px;
 }
 
-.btn:not(githubRepo) {
+.btn {
     border: none;
     border-radius: 8px;
+    background-color: #f3fcf0;
 }
 
 .btn:hover {
