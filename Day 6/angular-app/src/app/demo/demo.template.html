@@ -7,7 +7,7 @@
 <div [class.text-danger]="hasError">
     <p>
         <span [class.show-danger]="!hasError">Too many characters! </span>
-        <span>Remaining: {{10 - inputText.length}}</span>
+        <span [style.fontWeight]="hasError?600:400">Remaining: {{10 - inputText.length}}</span>
     </p>
 </div>
 <button [disabled]="hasError">Submit</button>
