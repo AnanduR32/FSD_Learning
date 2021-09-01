@@ -1,3 +1,11 @@
-h1{
+h1 {
     color: tomato;
+}
+
+.show-danger {
+    display: none;
+}
+
+.text-danger {
+    color: red;
 }

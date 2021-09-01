@@ -1,1 +1,13 @@
 <h1>Demo works!</h1>
+
+<br>
+<br>
+
+<input type="text" name="textInput" placeholder="enter a sentence" [(ngModel)]="inputText" (ngModelChange)="onchangeText()">
+<div [class.text-danger]="hasError">
+    <p>
+        <span [class.show-danger]="!hasError">Too many characters! </span>
+        <span>Remaining: {{10 - inputText.length}}</span>
+    </p>
+</div>
+<button [disabled]="hasError">Submit</button>
