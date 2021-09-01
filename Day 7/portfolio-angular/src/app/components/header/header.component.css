@@ -1,0 +1,39 @@
+header>.header-name {
+    font-size: 44px;
+    margin: 32px auto;
+    width: fit-content;
+}
+
+header>.header-subtitle {
+    margin: 6px auto;
+    width: fit-content;
+}
+
+header .header-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #ffd23f;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+header .header-icon {
+    width: fit-content;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+header .header-icon>img {
+    width: 150px;
+    height: 150px;
+}
+
+.content .section-home-header {
+    text-align: center;
+}

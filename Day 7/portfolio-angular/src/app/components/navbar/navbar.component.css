@@ -1,0 +1,22 @@
+nav a {
+    text-decoration: none !important;
+    color: black;
+    font-weight: 600;
+}
+
+.githubRepo {
+    width: 40px;
+}
+
+.btn:not(githubRepo) {
+    border: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #fae49d !important;
+}
+
+.spacer {
+    flex: 1;
+}
