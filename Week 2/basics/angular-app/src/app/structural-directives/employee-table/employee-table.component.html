@@ -1,0 +1,31 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Phone no</th>
+            <th *ngIf="isAdmin">Service Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of employeeList;  index as idx;">
+            <td>{{ e.id }}</td>
+            <td>{{ e!.name | titlecase | addHonorifics : e!.gender }}</td>
+            <td>{{ e.gender }}</td>
+            <td>{{ e.email }}</td>
+            <td>{{ e.phoneno }}</td>
+            <td *ngIf="isAdmin">
+                <div>
+                    <input type="radio" [name]="e.id" id="serviceLevel-1" [checked]="e.serviceLevel==1" (click)="saveRadio(idx,1)">
+                    <label for="serviceLevel-1">1</label>
+                    <input type="radio" [name]="e.id" id="serviceLevel-2" [checked]="e.serviceLevel==2" (click)="saveRadio(idx,2)">
+                    <label for="serviceLevel-2">2</label>
+                    <input type="radio" [name]="e.id" id="serviceLevel-3" [checked]="e.serviceLevel==3" (click)="saveRadio(idx,3)">
+                    <label for="serviceLevel-3">3</label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
