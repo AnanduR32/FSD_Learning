@@ -1,3 +1,4 @@
 <button (click)="toggleAdminRole()">Toggle Admin</button>
 
-<app-employee-table [employeeList]="employeeList" [isAdmin]="isAdmin"></app-employee-table>
+<app-employee-table [employeeList]="employeeList" [isAdmin]="isAdmin" (employeeListUpdate)="updateEmployeeList($event)">
+</app-employee-table>

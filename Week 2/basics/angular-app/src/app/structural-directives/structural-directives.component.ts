@@ -49,6 +49,12 @@ export class StructuralDirectivesComponent implements OnInit {
     this.isAdmin = !this.isAdmin;
   }
 
+  updateEmployeeList(employeeList : any){
+    console.log(this.employeeList)
+    this.employeeList = employeeList
+    console.log(this.employeeList)
+  }
+
 
   constructor() { }
 

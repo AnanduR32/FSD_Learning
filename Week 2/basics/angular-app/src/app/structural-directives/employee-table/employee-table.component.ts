@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 import Employee from 'src/app/models/employee/employee';
 
 @Component({
@@ -8,6 +8,7 @@ import Employee from 'src/app/models/employee/employee';
 })
 export class EmployeeTableComponent implements OnInit {
 
+  @Output()
   employeeListUpdate = new EventEmitter()
 
   @Input()
@@ -22,10 +23,11 @@ export class EmployeeTableComponent implements OnInit {
   }
 
   saveRadio(idx: any, level: number) {
-    console.log(idx, level)
     this.employeeList[idx].serviceLevel = level
-    console.log(this.employeeList)
+    this.employeeListUpdate.emit(this.employeeList)
   }
+
+  
 
   trackByID(employee: Employee) {
     return employee.id
