@@ -7,5 +7,5 @@
 
 #  Week 2 - Angular
 * [Basics](https://github.com/AnanduR32/FSD_Learning/tree/main/Week%202/basics)
-* [portfolio-angular](https://anandur32.github.io/FSD_Learning/Week%202/portfolio-angular/docs/index.html) 
+* [portfolio-angular](https://anandur32.github.io/FSD_Learning/Week%202/portfolio-angular/docs/) 
 * ...
