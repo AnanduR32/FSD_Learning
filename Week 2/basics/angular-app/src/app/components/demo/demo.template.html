@@ -3,7 +3,8 @@
 <br>
 <br>
 
-<input type="text" name="textInput" placeholder="enter a sentence" [(ngModel)]="inputText" (ngModelChange)="onchangeText()">
+<textarea rows="4" cols="40" type="text" name="textInput" placeholder="enter a sentence" [(ngModel)]="inputText" (ngModelChange)="onchangeText()">
+    </textarea>
 <div [class.text-danger]="hasError">
     <p>
         <span [class.show-danger]="!hasError">Too many characters! </span>
