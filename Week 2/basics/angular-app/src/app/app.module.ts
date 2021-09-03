@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppComponent } from './app.component';
 import DemoComponent from './components/demo/demo.component';
@@ -24,7 +26,9 @@ import { CounterComponent } from './components/counter/counter.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -30,7 +30,14 @@ export class StructuralDirectivesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.employeeList = this.empService.getData()
+    this.empService.getData().subscribe(
+      (data)=>{
+        this.employeeList = data
+      },
+      (error)=>{
+        alert('API data fetch failed')
+      }
+    )
     console.log(this.employeeList)
   }
 

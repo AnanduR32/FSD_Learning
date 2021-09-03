@@ -33,6 +33,8 @@ export class EmployeeTableComponent implements OnInit {
     return employee.id
   }
 
+  p: number = 1;
+
   ngOnInit(): void {
   }
 

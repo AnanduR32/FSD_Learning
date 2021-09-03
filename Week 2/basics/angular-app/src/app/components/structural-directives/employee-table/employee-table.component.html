@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let e of employeeList;  index as idx;">
+        <tr *ngFor="let e of employeeList | paginate: { itemsPerPage: 10, currentPage: p };  index as idx;" class="r-1">
             <td>{{ e.id }}</td>
             <td>{{ e!.name | titlecase | addHonorifics : e!.gender }}</td>
             <td>{{ e.gender }}</td>
@@ -29,3 +29,4 @@
         </tr>
     </tbody>
 </table>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
