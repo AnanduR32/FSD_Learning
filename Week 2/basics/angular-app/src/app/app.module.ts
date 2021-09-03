@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import DemoComponent from './demo/demo.component';
+import DemoComponent from './components/demo/demo.component';
 import { FormsModule } from '@angular/forms';
-import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { StructuralDirectivesComponent } from './components/structural-directives/structural-directives.component';
 import { AddHonorificsPipe } from './pipes/add-honorifics.pipe';
-import { EmployeeTableComponent } from './structural-directives/employee-table/employee-table.component';
+import { EmployeeTableComponent } from './components/structural-directives/employee-table/employee-table.component';
+import { CounterOutputComponent } from './components/counter/counter-output/counter-output.component';
+import { CounterButtonsComponent } from './components/counter/counter-buttons/counter-buttons.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { EmployeeTableComponent } from './structural-directives/employee-table/e
     StructuralDirectivesComponent,
     AddHonorificsPipe,
     EmployeeTableComponent,
+    CounterOutputComponent,
+    CounterButtonsComponent,
+    CounterComponent,
   ],
   imports: [
     BrowserModule,

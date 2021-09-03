@@ -1,0 +1,5 @@
+<div class="container text-center">
+    <app-employee-table [employeeList]="employeeList" [isAdmin]="isAdmin" (employeeListUpdate)="updateEmployeeList($event)">
+    </app-employee-table>
+    <button class="btn btn-orange" (click)="toggleAdminRole()">Toggle Admin</button>
+</div>

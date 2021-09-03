@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Employee from '../models/employee/employee';
+import Employee from 'src/app/models/employee/employee';
 
 @Component({
   selector: 'app-structural-directives',
@@ -49,16 +49,18 @@ export class StructuralDirectivesComponent implements OnInit {
     this.isAdmin = !this.isAdmin;
   }
 
-  updateEmployeeList(employeeList : any){
+  updateEmployeeList(employeeListNew : any){
+    console.log(`Before update: \n`)
     console.log(this.employeeList)
-    this.employeeList = employeeList
-    console.log(this.employeeList)
-  }
+    this.employeeList = employeeListNew
+    console.log(`After update: \n`)
+    console.log(this.employeeList)  }
 
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.employeeList)
   }
 
 }
