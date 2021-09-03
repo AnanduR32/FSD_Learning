@@ -1,0 +1,31 @@
+.custom-nav {
+    background-color: #C0CAAD !important;
+    border-radius: 10px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: #f3fcf0;
+}
+
+.btn:hover {
+    background-color: #B26E63 !important;
+    color: #f3fcf0 !important;
+}
+
+.stretch {
+    flex: 1;
+}
+
+.search {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.search:focus {
+    box-shadow: 0px 0px 2px gray;
+}
