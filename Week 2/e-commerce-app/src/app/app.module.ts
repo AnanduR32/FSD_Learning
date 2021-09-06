@@ -8,13 +8,21 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
+import { ProductRowComponent } from './components/main-content/product-row/product-row.component';
+import { AboutComponent } from './components/misc/about/about.component';
+import { ContactComponent } from './components/misc/contact/contact.component';
+import { Error404Component } from './components/misc/errors/error404/error404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    MainContentComponent
+    MainContentComponent,
+    ProductRowComponent,
+    AboutComponent,
+    ContactComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,

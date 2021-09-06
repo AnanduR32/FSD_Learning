@@ -7,6 +7,7 @@
             <th>Email</th>
             <th>Phone no</th>
             <th *ngIf="isAdmin">Service Level</th>
+            <th>Details</th>
         </tr>
     </thead>
     <tbody>
@@ -26,6 +27,7 @@
                     <label for="serviceLevel-3">3</label>
                 </div>
             </td>
+            <td><button class="btn btn-secondary" (click)="onNavigate(e.id)">More</button></td>
         </tr>
     </tbody>
 </table>

@@ -1,0 +1,42 @@
+.header>.name {
+    font-weight: 600;
+    font-size: 32px;
+    margin: 26px auto;
+    width: fit-content;
+    color: #4C243B;
+}
+
+.header>.subtitle {
+    margin: 6px auto;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.header>.subtitle>span {
+    color: #016FB9;
+}
+
+.header .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #C0CAAD;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+.header .icon {
+    width: fit-content;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header .icon>img {
+    width: 150px;
+    height: 150px;
+}

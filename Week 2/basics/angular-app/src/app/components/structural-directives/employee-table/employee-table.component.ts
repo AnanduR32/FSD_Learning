@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import Employee from 'src/app/models/employee/employee';
 
 @Component({
@@ -17,7 +18,7 @@ export class EmployeeTableComponent implements OnInit {
   @Input()
   isAdmin: boolean;
 
-  constructor() {
+  constructor(private router: Router) {
     this.employeeList = []
     this.isAdmin = false
   }
@@ -34,6 +35,10 @@ export class EmployeeTableComponent implements OnInit {
   }
 
   p: number = 1;
+
+  onNavigate(id:number){
+    this.router.navigate(['employeeDetail',id]).catch((response)=>{console.log(`Routed to employee with id: ${id}`)})
+  }
 
   ngOnInit(): void {
   }
