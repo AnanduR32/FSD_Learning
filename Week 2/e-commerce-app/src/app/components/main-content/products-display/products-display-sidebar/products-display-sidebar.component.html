@@ -1,0 +1,7 @@
+<div class="p-2">
+    <ul class="list-group">
+        <li class="list-group-item" (click)="changeSubCategory(0)">All</li>
+        <li class="list-group-item" *ngFor="let sc of subCategories" (click)="changeSubCategory(sc.subId)">{{sc.subName}}</li>
+    </ul>
+
+</div>

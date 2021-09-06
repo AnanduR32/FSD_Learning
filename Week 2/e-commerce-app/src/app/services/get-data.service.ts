@@ -11,16 +11,20 @@ export class GetDataService {
 
   constructor(private http: HttpClient) { }
 
-  getCategories():Observable<any>{
-    return this.http.get<any>(this.BASE_PATH+'category')
+  getCategories(): Observable<any> {
+    return this.http.get<any>(this.BASE_PATH + 'category')
   }
 
-  getSubCategoriesById(id:number):Observable<any>{
-    return this.http.get<any>(this.BASE_PATH+'subcategory/'+id)
+  getSubCategoriesById(id: number): Observable<any> {
+    return this.http.get<any>(this.BASE_PATH + 'subcategory/' + id)
   }
 
-  getProductsById(id:number):Observable<any>{
-    return this.http.get<any>(this.BASE_PATH+'products/cat/'+id)
+  getProductsById(id: number): Observable<any> {
+    return this.http.get<any>(this.BASE_PATH + 'products/cat/' + id)
+  }
+
+  getProductsBySubId(id: number): Observable<any> {
+    return this.http.get<any>(this.BASE_PATH + 'products/sub/' + id)
   }
 
 }

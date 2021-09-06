@@ -2,10 +2,12 @@
 <div class="row mx-2 my-5">
     <div class="col-sm-3 py-3" *ngFor="let c of categories">
         <div class="card p-2 h-100">
-            <img class="card-img-top h-75" src="{{ 'http://rjtmobile.com/grocery/images/'+c.catImage }}" alt="Product">
+            <div class="p-2 h-75">
+                <img class="card-img-top" src="{{ 'http://rjtmobile.com/grocery/images/'+c.catImage }}" alt="Product">
+            </div>
             <div class="card-body">
                 <h5 class="card-title">{{c.catName}}</h5>
-                <a href="#" class="btn btn-primary">Buy now</a>
+                <a class="btn btn-primary" (click)="onNavigate(c.catId)">Buy now</a>
             </div>
         </div>
     </div>
