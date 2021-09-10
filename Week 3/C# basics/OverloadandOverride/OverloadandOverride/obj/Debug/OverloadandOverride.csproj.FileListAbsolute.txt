@@ -1,0 +1,7 @@
+c:\users\anr\source\repos\OverloadandOverride\OverloadandOverride\bin\Debug\OverloadandOverride.exe.config
+c:\users\anr\source\repos\OverloadandOverride\OverloadandOverride\bin\Debug\OverloadandOverride.exe
+c:\users\anr\source\repos\OverloadandOverride\OverloadandOverride\bin\Debug\OverloadandOverride.pdb
+c:\users\anr\source\repos\OverloadandOverride\OverloadandOverride\obj\Debug\OverloadandOverride.csprojAssemblyReference.cache
+c:\users\anr\source\repos\OverloadandOverride\OverloadandOverride\obj\Debug\OverloadandOverride.csproj.CoreCompileInputs.cache
+c:\users\anr\source\repos\OverloadandOverride\OverloadandOverride\obj\Debug\OverloadandOverride.exe
+c:\users\anr\source\repos\OverloadandOverride\OverloadandOverride\obj\Debug\OverloadandOverride.pdb

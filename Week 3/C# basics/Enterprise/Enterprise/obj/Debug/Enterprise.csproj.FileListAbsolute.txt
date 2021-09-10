@@ -1,0 +1,7 @@
+c:\users\anr\source\repos\Enterprise\Enterprise\bin\Debug\Enterprise.exe.config
+c:\users\anr\source\repos\Enterprise\Enterprise\bin\Debug\Enterprise.exe
+c:\users\anr\source\repos\Enterprise\Enterprise\bin\Debug\Enterprise.pdb
+c:\users\anr\source\repos\Enterprise\Enterprise\obj\Debug\Enterprise.csprojAssemblyReference.cache
+c:\users\anr\source\repos\Enterprise\Enterprise\obj\Debug\Enterprise.csproj.CoreCompileInputs.cache
+c:\users\anr\source\repos\Enterprise\Enterprise\obj\Debug\Enterprise.exe
+c:\users\anr\source\repos\Enterprise\Enterprise\obj\Debug\Enterprise.pdb
