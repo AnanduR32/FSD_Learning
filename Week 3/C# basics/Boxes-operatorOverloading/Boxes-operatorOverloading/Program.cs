@@ -16,6 +16,14 @@ namespace Boxes_operatorOverloading
             b1.displayDimensions();
             b2.displayDimensions();
             b3.displayDimensions();
+            if(b1 > b2)
+            {
+                Console.WriteLine("Box 'b1' is larger than 'b2'");
+            }
+            else
+            {
+                Console.WriteLine("Box 'b1' is smaller than 'b2'");
+            }
             Console.ReadKey();
         }
     }
@@ -28,9 +36,9 @@ namespace Boxes_operatorOverloading
             this.breadth = breadth;
             this.height = height;
         }
-        public void displayVolume()
+        public float getVolume()
         {
-            Console.WriteLine("Volume = {0}",length * breadth * height);
+            return(length * breadth * height);
         }
         public static Box operator +(Box b1, Box b2)
         {
@@ -44,6 +52,29 @@ namespace Boxes_operatorOverloading
         {
             Console.WriteLine("{0} {1} {2}", length, breadth, height);
         }
+        public static Boolean operator >(Box b1, Box b2)
+        {
+            if (b1.getVolume()>b2.getVolume())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static Boolean operator <(Box b1, Box b2)
+        {
+            if (b1.getVolume() < b2.getVolume())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 
 }

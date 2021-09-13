@@ -5,3 +5,10 @@ C:\Users\anr\source\repos\Boxes-operatorOverloading\Boxes-operatorOverloading\ob
 C:\Users\anr\source\repos\Boxes-operatorOverloading\Boxes-operatorOverloading\obj\Debug\Boxes-operatorOverloading.csproj.CoreCompileInputs.cache
 C:\Users\anr\source\repos\Boxes-operatorOverloading\Boxes-operatorOverloading\obj\Debug\Boxes-operatorOverloading.exe
 C:\Users\anr\source\repos\Boxes-operatorOverloading\Boxes-operatorOverloading\obj\Debug\Boxes-operatorOverloading.pdb
+C:\GitHub\FSD_Learning\Week 3\C# basics\Boxes-operatorOverloading\Boxes-operatorOverloading\bin\Debug\Boxes-operatorOverloading.exe.config
+C:\GitHub\FSD_Learning\Week 3\C# basics\Boxes-operatorOverloading\Boxes-operatorOverloading\bin\Debug\Boxes-operatorOverloading.exe
+C:\GitHub\FSD_Learning\Week 3\C# basics\Boxes-operatorOverloading\Boxes-operatorOverloading\bin\Debug\Boxes-operatorOverloading.pdb
+C:\GitHub\FSD_Learning\Week 3\C# basics\Boxes-operatorOverloading\Boxes-operatorOverloading\obj\Debug\Boxes-operatorOverloading.csprojAssemblyReference.cache
+C:\GitHub\FSD_Learning\Week 3\C# basics\Boxes-operatorOverloading\Boxes-operatorOverloading\obj\Debug\Boxes-operatorOverloading.csproj.CoreCompileInputs.cache
+C:\GitHub\FSD_Learning\Week 3\C# basics\Boxes-operatorOverloading\Boxes-operatorOverloading\obj\Debug\Boxes-operatorOverloading.exe
+C:\GitHub\FSD_Learning\Week 3\C# basics\Boxes-operatorOverloading\Boxes-operatorOverloading\obj\Debug\Boxes-operatorOverloading.pdb
