@@ -56,6 +56,10 @@ namespace Enterprise
         }
         public void setSalary(float salary)
         {
+            if(salary < 0)
+            {
+                throw new Exception("Salary can't be -ve!");
+            }
             this.salary = salary;
         }
     }
