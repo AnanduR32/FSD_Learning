@@ -32,6 +32,11 @@ namespace ExceptionBasic
 
                
             }
+            catch(UserAlreadyLoggedInException e)
+            {
+                Console.WriteLine("Exception occured: {0}", e.Message);
+            }
+
             catch(FileNotFoundException e)
             {
                 Console.WriteLine("Exception: {0}", e.Message);
