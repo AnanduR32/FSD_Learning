@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <div>
+        <h2>Hello world!</h2>
+
+        @{
+            List<string> Names = new List<string>() { "Raiden Shogen", "Kujou Sara", "Qiqi", "Xiangling" };
+            bool show = true;
+        }
+        <h3>
+            @(show == true? "Names visible" : "Names hidden")
+        </h3>
+
+        @if (show == true)
+        {
+            <ul>
+                @foreach (string name in Names)
+                {
+                <li>@name</li>
+                }
+            </ul>
+        }
+
+    </div>
+</body>
+</html>
