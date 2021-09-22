@@ -16,9 +16,9 @@ namespace WebAppBasicASP.NetCS.Controllers
         {
             return View();
         }
-        public ActionResult Details()
+        public ActionResult Details(Employee employee)
         {
-            Employee employee = new Employee() { Id = 1, Name = "Anandu R", Email = "ananduraj32@gmail.com" };
+            // Employee employee = new Employee() { Id = 1, Name = "Anandu R", Email = "ananduraj32@gmail.com" };
             return View(employee);
         }
     }

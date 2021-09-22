@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using WebAppBasicASP.NetCS.Models
+@model Employee 
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -9,6 +12,9 @@
     <div>
         <h2>Hello world!</h2>
 
+        @Html.ActionLink("Home", "index")
+        @Html.ActionLink("Details", "Details")
+
         @{
             List<string> Names = new List<string>() { "Raiden Shogen", "Kujou Sara", "Qiqi", "Xiangling" };
             bool show = true;
@@ -17,14 +23,39 @@
             @(show == true? "Names visible" : "Names hidden")
         </h3>
 
-        @if (show == true)
+        @helper ShowList(List<string> list)
         {
             <ul>
-                @foreach (string name in Names)
+                @foreach (string item in list)
                 {
-                <li>@name</li>
+                    <li>@item</li>
                 }
             </ul>
+        }
+
+        @using (Html.BeginForm("Details", "Home", FormMethod.Post))
+        {
+            <p>
+                Id:
+                @Html.TextBoxFor(Model => Model.Id)
+            </p>
+            <p>
+                Name:
+                @Html.TextBoxFor(Model => Model.Name)
+            </p>
+            <p>
+                Email:
+                @Html.TextBoxFor(Model => Model.Email)
+            </p>
+            <input type="submit" value="Submit"/>
+        }
+
+
+
+
+        @if (show == true)
+        {
+            @ShowList(Names)
         }
 
     </div>

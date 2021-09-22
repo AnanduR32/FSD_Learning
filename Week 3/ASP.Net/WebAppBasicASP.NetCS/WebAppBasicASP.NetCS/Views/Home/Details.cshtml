@@ -10,20 +10,26 @@
     <title>Details</title>
 </head>
 <body>
-    <div> 
+    <div>
         <h2>Details ....</h2>
-        <table>
-            <tr>
-                <td>Id</td>
-                <td>Name</td>
-                <td>Email</td>
-            </tr>
-            <tr>
-                <td>@Model.Id</td>
-                <td>@Model.Name</td>
-                <td>@Model.Email</td>
-            </tr>
-        </table>
+
+        @helper createTable(Employee emp)
+        {
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                </tr>
+                <tr>
+                    <td>@emp.Id</td>
+                    <td>@emp.Name</td>
+                    <td>@emp.Email</td>
+                </tr>
+            </table>
+        }
+        @createTable(Model)
+
     </div>
 </body>
 </html>
