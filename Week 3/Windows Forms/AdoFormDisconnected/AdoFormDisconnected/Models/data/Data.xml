@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Employee>
+    <EmpId>1</EmpId>
+    <EmpName>Mark</EmpName>
+    <DeptID>101</DeptID>
+  </Employee>
+  <Employee>
+    <EmpId>2</EmpId>
+    <EmpName>Paul</EmpName>
+    <DeptID>101</DeptID>
+  </Employee>
+  <Employee>
+    <EmpId>3</EmpId>
+    <EmpName>Watson</EmpName>
+    <DeptID>103</DeptID>
+  </Employee>
+  <Department>
+    <DeptID>101</DeptID>
+    <DeptName>Admin</DeptName>
+  </Department>
+  <Department>
+    <DeptID>102</DeptID>
+    <DeptName>Sales</DeptName>
+  </Department>
+  <Department>
+    <DeptID>103</DeptID>
+    <DeptName>IT</DeptName>
+  </Department>
+</NewDataSet>

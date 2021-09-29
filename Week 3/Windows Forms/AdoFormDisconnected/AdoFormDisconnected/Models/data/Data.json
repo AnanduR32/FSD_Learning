@@ -1,0 +1,1 @@
+{"Employee":[{"EmpId":1,"EmpName":"Mark","DeptID":101},{"EmpId":2,"EmpName":"Paul","DeptID":101},{"EmpId":3,"EmpName":"Watson","DeptID":103}],"Department":[{"DeptID":101,"DeptName":"Admin"},{"DeptID":102,"DeptName":"Sales"},{"DeptID":103,"DeptName":"IT"}]}
